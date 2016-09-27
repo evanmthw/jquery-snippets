@@ -1,0 +1,11 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+$(document).keydown(function(evt){
+    if (evt.keyCode==83 && (evt.metaKey || evt.ctrlKey)){
+        evt.preventDefault();
+        alert('worked');
+    }
+});
+</script>
+
+Press control + s || command + s (mac)
