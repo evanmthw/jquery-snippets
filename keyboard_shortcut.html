@@ -1,3 +1,6 @@
+<head>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script>
 $(document).keydown(function(evt){
@@ -9,3 +12,17 @@ $(document).keydown(function(evt){
 </script>
 
 Press control + s || command + s (mac)
+
+<br>
+<br>
+
+Code:
+<br>
+<code>
+$(document).keydown(function(evt){
+    if (evt.keyCode==83 && (evt.metaKey || evt.ctrlKey)){
+        evt.preventDefault();
+        alert('worked');
+    }
+});
+</code>
